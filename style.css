@@ -1,0 +1,237 @@
+body {
+    height: 1500px;
+    width: 100%;
+}
+
+.cont {
+    display: flex;
+    width: 100%;
+    max-height: 49%;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 4.5rem;
+    position: relative;
+}
+
+.calc {
+    margin-top: 35px;
+    width: 29.2%;
+    border: 1px solid #000;
+    border-radius: 40px;
+    background: #565656;
+    color: #fff;
+    padding: 35px;
+    padding-top: 25px;
+}
+
+.calc-screen {
+    max-height: 16%;
+    width: 100%;
+    display: flex;
+    background: #50b7e2;
+    border-radius: 15px;
+    justify-content: end;
+    align-items: center;
+}
+
+.calc-screen p {
+    font-size: 4.7rem;
+    margin-right: 2%;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 10%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background: #909398;
+    border-radius: 15%;
+    
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+    
+}
+
+.btn:hover {
+    filter: brightness(115%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.blue {
+    background: #50b7e2;
+}
+
+.btn.red {
+    background: #e85e43;
+}
+
+.log {
+    position: absolute;
+    left: 70%;
+    width: 28%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.log p {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.log-list {
+    overflow-y: auto;
+    list-style-type: none;
+    background: #d7eaf3;
+    height: 645px;
+    margin: 0;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+@media (max-width: 1333px) {
+    .cont {
+        font-size: 4rem;
+        height: 700px;
+    }
+
+    .calc-screen p{
+        font-size: 4.3rem;
+    }
+
+    .btn {
+        height: 75px;
+        padding: 0 20px;
+    }
+
+    .log-list {
+        font-size: 1.5rem;
+        height: 630px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .cont {
+        font-size: 3rem;
+        height: 660px;
+    }
+    
+    .calc-screen p{
+        font-size: 3.9rem;
+    }
+
+    .btn {
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .log-list {
+        height: 590px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .cont {
+        height: 620px;
+    }
+    
+    .calc-screen p{
+        font-size: 3.5rem;
+    }
+
+    .btn {
+        padding: 0 15px;
+        height: 65px;
+    }
+
+    .log p {
+        font-size: 1.5rem;
+    }
+
+    .log-list {
+        font-size: 1.3rem;
+        height: 560px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .cont {
+        font-size: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+    }
+    
+    .calc {
+        padding-top: 15px;
+        width: 330px;
+        height: 480px;
+    }
+
+    .calc-screen p{
+        font-size: 3.2rem;
+    }
+
+    .btn {
+        padding: 0 12px;
+        height: 60px;
+    }
+
+     .log {
+        position:static;
+        height: 200px;
+        width: 320px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .log p {
+        font-size: 1.5rem;
+    }
+
+    .log-list {
+        font-size: 1.4rem;
+        width: 200px;
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+    }
+
+    .calc {
+        height: 480px;
+        width: 300px;
+        padding: 25px;
+        padding-top: 15px;
+    }
+
+    .log {
+        position:static;
+        height: 200px;
+        width: 320px;
+        align-items: center;
+        text-align: center;
+    }
+}
