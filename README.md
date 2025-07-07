@@ -1,1 +1,1 @@
-[surge.sh] (rttyjtywqxdseiejwimqewu9b-calc.surge.sh)
+[surge.sh] (https://rttyjtywqxdseiejwimqewu9b-calc.surge.sh)
