@@ -1,2 +1,1 @@
-rttyjtywqxdseiejwimqewu9b-calc.surge.sh
-калькулятор
+[surge.sh] (rttyjtywqxdseiejwimqewu9b-calc.surge.sh)
